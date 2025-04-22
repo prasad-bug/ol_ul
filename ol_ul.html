@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OL and UL Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      color: rgb(26, 185, 221);
+    }
+
+    ul.circle {
+      list-style-type: circle;
+    }
+
+    ul.square {
+      list-style-type: square;
+    }
+
+    ul.none {
+      list-style-type: none;
+    }
+
+    ul.custom-numbering {
+      list-style-type: none;
+    }
+
+    ul.custom-numbering li::before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: green;
+    }
+
+    ul.custom-numbering {
+      counter-reset: item;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Practice: Ordered and Unordered Lists</h1>
+
+  <!-- Ordered List Default -->
+  <h2>Ordered List (Default)</h2>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+  <!-- Ordered List with start -->
+  <h2>Ordered List (start from 5)</h2>
+  <ol start="3">
+    <li>Python</li>
+    <li>Java</li>
+    <li>C++</li>
+  </ol>
+
+  <!-- Ordered List with type -->
+  <h2>Ordered List with Type = "A"</h2>
+  <ol type="B">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ol>
+
+  <!-- Unordered List (Default) -->
+  <h2>Unordered List (Default Disc)</h2>
+  <ul>
+    <li>Pune</li>
+    <li>Mumbai</li>
+    <li>Nashik</li>
+  </ul>
+
+  <!-- Unordered List with Circle -->
+  <h2>Unordered List (Circle)</h2>
+  <ul class="circle">
+    <li>Instagram</li>
+    <li>Facebook</li>
+    <li>Twitter</li>
+  </ul>
+
+  <!-- Unordered List with Square -->
+  <h2>Unordered List (Square)</h2>
+  <ul class="square">
+    <li>Black</li>
+    <li>White</li>
+    <li>Grey</li>
+  </ul>
+
+  <!-- Unordered List with no bullets -->
+  <h2>Unordered List (No Bullets)</h2>
+  <ul class="none">
+    <li>Honda</li>
+    <li>Yamaha</li>
+    <li>Bajaj</li>
+  </ul>
+
+  <!-- Custom Unordered List with Numbering (Using CSS) -->
+  <h2>Custom Numbered UL (CSS Counter)</h2>
+  <ul class="custom-numbering">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Juice</li>
+  </ul>
+
+
+<h2> reversed the list</h2>
+  <ol reversed>
+    <li>Third</li>
+    <li>Second</li>
+    <li>First</li>
+  </ol>
+<h2> Styled OL with Alphabetical Labels</h2>
+  <ol type="A">
+    <li>Plan</li>
+    <li>Design</li>
+    <li>Develop</li>
+    <li>Deploy</li>
+  </ol>
+  <ol type="a">
+    <li>Plan</li>
+    <li>Design</li>
+    <li>Develop</li>
+    <li>Deploy</li>
+  </ol>
+
+  <h2>Horizontal UL (Menu Style)</h2>
+  <ul style="list-style: none; display: flex; gap: 20px;">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+  <ul>
+    <li><a href="https://pk5616.notion.site/OL-UL-1dd3c18a365f8037be15d6648b1d6686">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <h2>Checklist with Emojis</h2>
+  <ul style="list-style: none;">
+    <li>✅ Buy groceries</li>
+    <li>✅ Finish homework</li>
+    <li>⬜ Clean room</li>
+  </ul>
+  
+</body>
+</html>
